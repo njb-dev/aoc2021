@@ -25,9 +25,7 @@ namespace AOC2021
             {
                 saveZero = school[0];
                 for (i = 0; i <= school.GetUpperBound(0) - 1; i++)
-                {
                     school[i] = school[i + 1];
-                }
                 school[8] = saveZero;
                 school[6] += saveZero;
 
