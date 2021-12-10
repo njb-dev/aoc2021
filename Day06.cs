@@ -40,6 +40,7 @@ namespace AOC2021
                         after256Days = totalFish;
                 }
             }
+            
             Console.WriteLine("Day 6");
             Console.WriteLine("-----");
             Console.WriteLine("Part 1 Answer: " + after80Days.ToString());
