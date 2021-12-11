@@ -50,7 +50,7 @@ namespace AOC2021
                     for (i = openers.Length - 1; i >= 0; i--)
                     {
                         symbol = openers.Substring(i, 1);
-                        fixes = fixes * 5;
+                        fixes *= 5;
                         fixes += FixValue(symbol);
                     }
                     fixScores.Add(fixes);
