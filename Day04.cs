@@ -91,16 +91,20 @@ namespace AOC2021
             int number = 0;
             int row;
             int col;
-            Board = new TBoard();
-            Board.Row = new TRow[5];
+            Board = new TBoard()
+            {
+                Row = new TRow[5]
+            };
             for (row = 0; row <= Board.Row.GetUpperBound(0); row++)
             {
                 Board.Row[row].Column = new TColumn[5];
                 for (col = 0; col <= Board.Row[row].Column.GetUpperBound(0); col++)
                 {
-                    Board.Row[row].Column[col] = new TColumn();
-                    Board.Row[row].Column[col].Number = Convert.ToInt32(numbers.Split(',')[number]);
-                    Board.Row[row].Column[col].Matched = false;
+                    Board.Row[row].Column[col] = new TColumn
+                    {
+                        Number = Convert.ToInt32(numbers.Split(',')[number]),
+                        Matched = false
+                    };
                     number++;
                 }
             }
